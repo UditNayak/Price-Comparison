@@ -7,8 +7,8 @@ app = Flask(__name__) #creating the Flask class object
 def home():
     flipkart_data = None
     amazon_data = None
-    flipkart_error = ""
-    amazon_error = ""
+    flipkart_error = "Flipkart: "
+    amazon_error = "Amazon: "
 
     if request.method == "POST":
         flipkart_url = request.form.get('flipkart')
